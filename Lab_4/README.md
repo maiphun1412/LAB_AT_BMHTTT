@@ -1,11 +1,5 @@
 # LAB 4 -- KHẢO SÁT VÀ ĐÁNH GIÁ BỀ MẶT MẠNG BẰNG NMAP
 
-## Thông tin sinh viên
-
--   **Họ và tên:** Nguyễn Thị Phương Mai
--   **Lớp:** 11_ĐH_CNPM2
--   **MSSV:** 1150080146
-
 ## Mô tả bài Lab
 
 LAB 4 thực hành khảo sát và đánh giá bề mặt mạng bằng công cụ Nmap trong
@@ -13,8 +7,7 @@ môi trường máy ảo cô lập.
 
 Mục tiêu của bài thực hành là sử dụng Kali Linux làm máy quét để phát
 hiện các thiết bị đang hoạt động trong mạng, xác định các cổng và dịch
-vụ được mở trên máy đích Metasploitable 2, nhận diện phiên bản dịch vụ
-và hệ điều hành, đồng thời quan sát một số rủi ro bảo mật cơ bản.
+vụ được mở trên máy đích Metasploitable 2.
 
 ## Môi trường thực hành
 
@@ -48,17 +41,9 @@ diện phiên bản cho thấy nhiều dịch vụ sử dụng phiên bản cũ,
 mặt tấn công và cần được cập nhật, giới hạn truy cập hoặc tắt khi không
 cần thiết.
 
-Bài thực hành giúp làm quen với quy trình rà soát một hệ thống mạng:
-phát hiện host → xác định cổng → nhận diện dịch vụ → đánh giá thông tin
-thu được → lưu kết quả làm bằng chứng.
-
 ## Video thực hành
 
 Video ghi lại quá trình thực hiện LAB 4:
 
 https://youtu.be/3-Tg6aEeP68
 
-## Lưu ý
-
-Toàn bộ quá trình quét được thực hiện trong môi trường máy ảo Host-Only
-phục vụ mục đích học tập và thực hành an toàn thông tin.
