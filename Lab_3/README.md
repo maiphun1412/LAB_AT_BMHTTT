@@ -44,10 +44,4 @@ Microsoft Defender, Real-time Protection, Tamper Protection và ba profile Windo
 - Đã xác định được đường dẫn cấu hình Sysmon tại `C:\LAB3\LAB3_Threats_Assets\lab3_assets\sysmon-lab.xml`.
 - Đã thực hiện sao lưu và reset các artefact thử nghiệm LAB3 để chuẩn bị quay lại video.
 
-## 5. Minh chứng
 
-Các tệp và ảnh thực hành được lưu trong `C:\LAB3\Evidence` và thư mục lưu bằng chứng của bài lab.
-
-Bằng chứng đã ghi nhận gồm cấu hình máy ảo, phiên bản công cụ, trạng thái Defender/Firewall, kết quả kiểm tra tài khoản và các lệnh PowerShell.
-
-**Trạng thái hiện tại:** Đã triển khai đến TH4; chưa có đủ bằng chứng xác nhận hoàn thành TH3–TH4 và chưa thực hiện đầy đủ TH5–TH7.
