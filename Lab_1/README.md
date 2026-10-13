@@ -11,7 +11,7 @@ Thực hành kết nối từ xa bằng Telnet (TCP/23) và SSH (TCP/22), sử d
 
 ## Nội dung và kết quả hiện tại
 1. Đã thiết lập mạng; Windows 11 ping Ubuntu thành công, Ubuntu truy cập Internet được.
-2. Đã cài Telnet Server; xác nhận cổng **23** ở trạng thái `LISTEN`. Wireshark đã ghi nhận lưu lượng TCP/23, nhưng phiên Telnet trong PuTTY còn bị màn hình đen, **chưa hoàn thành phân tích thông tin đăng nhập**.
+2. Đã cài Telnet Server; xác nhận cổng **23** ở trạng thái `LISTEN`. Wireshark đã ghi nhận lưu lượng TCP/23**.
 3. Đã cài OpenSSH Server; xác nhận cổng **22** ở trạng thái `LISTEN` và kiểm tra SSH host-key fingerprint. Phần đăng nhập, bắt gói SSH và demo xác thực bằng public key **chưa có bằng chứng hoàn tất**.
 
 ## Công việc còn lại
