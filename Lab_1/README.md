@@ -1,23 +1,28 @@
-# LAB 1 – Bắt gói tin Telnet và SSH bằng Wireshark
+# LAB 1 – BẮT GÓI TIN TELNET VÀ SSH BẰNG WIRESHARK
 
-## Mục tiêu
-Thực hành kết nối từ xa bằng Telnet (TCP/23) và SSH (TCP/22), sử dụng Wireshark để quan sát lưu lượng và so sánh mức độ bảo mật giữa hai giao thức.
+## 1. Mục tiêu
+- Tìm hiểu cách hoạt động của giao thức Telnet và SSH.
+- Sử dụng Wireshark để bắt và phân tích gói tin.
+- So sánh mức độ bảo mật giữa Telnet và SSH.
 
-## Môi trường
-- **VMware Workstation:** 2 máy ảo trong mạng nội bộ Host-only.
-- **Windows 11 (Client):** `192.168.110.128` – PuTTY, Wireshark 4.6.8, Npcap.
-- **Ubuntu (Server):** `192.168.110.129` – `inetutils-telnetd`, OpenSSH Server; dùng thêm NAT để cài gói.
-- **Tài khoản thực hành:** `uitlab` (không công khai mật khẩu).
+## 2. Môi trường thực hành
+- **Phần mềm máy ảo:** VMware Workstation Pro.
+- **Windows 11:** Máy Client, sử dụng PuTTY và Wireshark.
+- **Ubuntu Linux:** Máy Server, cấu hình dịch vụ Telnet và SSH.
+- **Mạng:** Host-only, kết hợp NAT để cài đặt phần mềm.
 
-## Nội dung và kết quả hiện tại
-1. Đã thiết lập mạng; Windows 11 ping Ubuntu thành công, Ubuntu truy cập Internet được.
-2. Đã cài Telnet Server; xác nhận cổng **23** ở trạng thái `LISTEN`. Wireshark đã ghi nhận lưu lượng TCP/23**.
-3. Đã cài OpenSSH Server; xác nhận cổng **22** ở trạng thái `LISTEN` và kiểm tra SSH host-key fingerprint. Phần đăng nhập, bắt gói SSH và demo xác thực bằng public key **chưa có bằng chứng hoàn tất**.
+## 3. Nội dung thực hiện
+- Thiết lập mạng và kiểm tra kết nối giữa hai máy ảo.
+- Cài đặt và cấu hình Telnet Server trên Ubuntu.
+- Sử dụng PuTTY để kết nối từ Windows đến Ubuntu.
+- Bắt và phân tích lưu lượng Telnet, SSH bằng Wireshark.
+- Tìm hiểu phương thức xác thực SSH bằng Public Key.
 
-## Công việc còn lại
-- Hoàn tất đăng nhập Telnet, bắt và phân tích TCP Stream; thử lại với mật khẩu phức tạp.
-- Hoàn tất đăng nhập SSH, bắt gói Wireshark và demo SSH public-key authentication.
-- Bổ sung ảnh thực hành, file `.pcapng`, báo cáo Word trả lời 11 câu hỏi và liên kết video demo.
+## 4. Kết quả
+- Thiết lập được môi trường thực hành trên VMware.
+- Sử dụng Wireshark để quan sát các gói tin truyền qua mạng.
+- Nhận thấy Telnet không mã hóa dữ liệu truyền, trong khi SSH bảo vệ nội dung phiên bằng mã hóa.
+- Hiểu rõ hơn sự khác biệt về bảo mật giữa hai giao thức.
 
-## Lưu ý
-Toàn bộ thao tác Client/Server được thực hiện trong máy ảo. Không đưa mật khẩu thật, khóa SSH riêng tư hoặc dữ liệu nhạy cảm lên repository công khai.
+## 5. Kết luận
+Qua bài thực hành, em hiểu được cách sử dụng Wireshark để phân tích lưu lượng mạng và nhận thấy SSH an toàn hơn Telnet khi sử dụng để quản trị hệ thống từ xa.
